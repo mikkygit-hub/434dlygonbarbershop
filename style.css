@@ -482,6 +482,7 @@ iframe {
 }
 
 /* About Section */
+/* About Section */
 .about-section {
   background: #ffffff;
 }
@@ -491,34 +492,30 @@ iframe {
   align-items: center;
   gap: 40px;
   max-width: 1100px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 0 auto;
 }
 
 .about-image {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
 .about-image img {
+  display: block;
   width: 100%;
   max-width: 420px;
-
-  aspect-ratio: 1 / 1;   /* Makes image square */
-  object-fit: cover;     /* Crops image nicely */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   object-position: center top;
-
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 
   opacity: 1;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.about-image img.visible {
-  opacity: 1;
-  transform: translateY(0);
+  visibility: visible;
+  transform: none;
 }
 
 .about-text {
@@ -537,6 +534,10 @@ iframe {
   .about-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .about-image {
+    width: 100%;
   }
 
   .about-image img {
