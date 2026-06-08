@@ -173,6 +173,7 @@ canvas#backgroundCanvas {
   display: flex;
   justify-content: center;
   background: rgba(0, 0, 0, 1);
+  overflow-x: auto;
 }
 
 .hero-nav ul {
@@ -540,5 +541,160 @@ iframe {
 
   .about-image img {
     max-width: 100%;
+  }
+}
+
+/* Mobile nav horizontal scroll fix */
+@media (max-width: 768px) {
+  .hero-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 8px 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .hero-nav ul {
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: max-content;
+    min-width: max-content;
+  }
+
+  .hero-nav ul li {
+    flex: 0 0 auto;
+  }
+
+  .hero-nav ul li a {
+    display: block;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Optional: hides the scrollbar but keeps scrolling working */
+  .hero-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-nav {
+    scrollbar-width: none;
+  }
+
+  /* Adjust banner position under the nav */
+  .fixed-review-banner {
+    top: 43px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 8px 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .hero-nav ul {
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: max-content;
+    min-width: max-content;
+  }
+
+  .hero-nav ul li {
+    flex: 0 0 auto;
+  }
+
+  .hero-nav ul li a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .hero-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-nav {
+    scrollbar-width: none;
+  }
+}
+
+/* Scrollable Mobile Navigation Bar */
+@media (max-width: 768px) {
+  .hero-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 8px 10px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .hero-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: max-content;
+    min-width: max-content;
+    list-style: none;
+  }
+
+  .hero-nav ul li {
+    flex: 0 0 auto;
+  }
+
+  .hero-nav ul li a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .fixed-review-banner {
+    top: 43px;
+  }
+}
+
+/* Scrollable Mobile Navigation Bar */
+@media (max-width: 768px) {
+  .hero-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 8px 10px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .hero-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: max-content;
+    min-width: max-content;
+    list-style: none;
+  }
+
+  .hero-nav ul li {
+    flex: 0 0 auto;
+  }
+
+  .hero-nav ul li a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 0.9rem;
   }
 }
