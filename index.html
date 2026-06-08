@@ -197,8 +197,8 @@
 <!-- Footer -->
 <footer class="main-footer">
   <div class="container">
-    <p style="text-align:center;">&copy; 2025 434D Lygon Barber Shop.</p>
-    <p style="text-align:center;"> All rights reserved.</p>
+    <p style="text-align:center;">&copy; 2025 434D Lygon Barber Shop. All rights reserved.</p>
+    <p style="text-align:center;">Website created by Nexus Industries.</p>
   </div>
 </footer>
 
@@ -254,45 +254,47 @@
   const navLinks = document.querySelectorAll('.hero-nav a');
   const sections = document.querySelectorAll('section');
 
+  function centerActiveNavLink(activeLink) {
+    if (window.innerWidth <= 768) {
+      activeLink.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest'
+      });
+    }
+  }
+
   function setActiveLink() {
     let currentSectionId = '';
 
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 150; // offset for fixed nav and banner
-      if (scrollY >= sectionTop) {
+      const sectionTop = section.offsetTop - 150;
+
+      if (window.scrollY >= sectionTop) {
         currentSectionId = section.getAttribute('id');
       }
     });
 
     navLinks.forEach(link => {
       link.classList.remove('active');
-      if (link.getAttribute('href').includes(currentSectionId)) {
+
+      const href = link.getAttribute('href');
+
+      if (href && href.includes(currentSectionId)) {
         link.classList.add('active');
+        centerActiveNavLink(link);
       }
     });
   }
 
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      centerActiveNavLink(this);
+    });
+  });
+
   window.addEventListener('scroll', setActiveLink);
-</script>
-
-<script>
-  const aboutImage = document.querySelector('.about-fade');
-
-  function revealAboutImage() {
-    if (!aboutImage) return;
-
-    const rect = aboutImage.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-
-    if (rect.top < windowHeight - 100 && rect.bottom > 100) {
-      aboutImage.classList.add('visible');
-    } else {
-      aboutImage.classList.remove('visible');
-    }
-  }
-
-  window.addEventListener('scroll', revealAboutImage);
-  window.addEventListener('load', revealAboutImage);
+  window.addEventListener('load', setActiveLink);
 </script>
 
 </body>
