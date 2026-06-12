@@ -529,6 +529,61 @@ iframe {
   margin-bottom: 20px;
 }
 
+/* Business Hours */
+.business-hours-section {
+  background: #ffffff;
+}
+
+.business-hours-box {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #222;
+  padding: 28px 34px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #d90000;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 1.05rem;
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+}
+
+.hours-row span:first-child {
+  font-weight: bold;
+  color: #222;
+}
+
+.hours-row span:last-child {
+  color: #333;
+}
+
+.hours-row.closed span:last-child {
+  color: #d90000;
+  font-weight: bold;
+}
+
+/* Mobile Business Hours */
+@media (max-width: 500px) {
+  .business-hours-box {
+    padding: 24px 22px;
+  }
+
+  .hours-row {
+    font-size: 1rem;
+    gap: 20px;
+  }
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .about-content {
