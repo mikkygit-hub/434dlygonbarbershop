@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="no-banner">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | 434D Lygon Barber Shop</title>
+  <meta name="description" content="See our latest skin fades, classic cuts and beard work at 434D Lygon Barber Shop, Brunswick East." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="barberlogo.jpg" type="image/jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="backgroundCanvas" aria-hidden="true"></canvas>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- ===== Navigation ===== -->
+<nav class="hero-nav" aria-label="Main">
+  <ul>
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#hours">Hours</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="index.html#location">Location</a></li>
+    <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+  </ul>
+</nav>
+<div class="nav-stripe" aria-hidden="true"></div>
+
+<main>
+
+<!-- ===== Page header ===== -->
+<header class="gallery-hero">
+  <div class="container">
+    <div class="gallery-logo fade-in-logo">
+      <img src="barberlogo.jpg" alt="434D Lygon Barber Shop logo" />
+    </div>
+    <span class="eyebrow fade-in-text">Our Work</span>
+    <h1 class="fade-in-text">Gallery</h1>
+    <p class="fade-in-text delay">Fresh fades, classic cuts and sharp beard work. Straight from the chair on Lygon St!</p>
+  </div>
+</header>
+
+<!-- ===== Photo grid ===== -->
+<section class="section gallery-section">
+  <div class="container">
+    <div class="gallery-grid">
+      <!-- To add a photo, copy one line below and change the number / file name -->
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 1 full size"><img src="1.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 1" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 2 full size"><img src="2.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 2" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 3 full size"><img src="3.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 3" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 4 full size"><img src="4.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 4" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 5 full size"><img src="5.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 5" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 6 full size"><img src="6.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 6" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 7 full size"><img src="7.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 7" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 8 full size"><img src="8.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 8" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 9 full size"><img src="9.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 9" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 10 full size"><img src="10.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 10" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 11 full size"><img src="11.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 11" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 12 full size"><img src="12.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 12" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 13 full size"><img src="13.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 13" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 14 full size"><img src="14.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 14" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 15 full size"><img src="15.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 15" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 16 full size"><img src="16.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 16" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 17 full size"><img src="17.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 17" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 18 full size"><img src="18.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 18" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 19 full size"><img src="19.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 19" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 20 full size"><img src="20.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 20" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 21 full size"><img src="21.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 21" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 22 full size"><img src="22.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 22" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 23 full size"><img src="23.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 23" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 24 full size"><img src="24.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 24" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 25 full size"><img src="25.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 25" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 26 full size"><img src="26.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 26" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 27 full size"><img src="27.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 27" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 28 full size"><img src="28.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 28" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 29 full size"><img src="29.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 29" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 30 full size"><img src="30.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 30" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 31 full size"><img src="31.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 31" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 32 full size"><img src="32.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 32" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 33 full size"><img src="33.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 33" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 34 full size"><img src="34.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 34" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 35 full size"><img src="35.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 35" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 36 full size"><img src="36.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 36" loading="lazy" /></button>
+      <button class="gallery-item reveal zoom" type="button" aria-label="View photo 37 full size"><img src="37.jpg" alt="Haircut by 434D Lygon Barber Shop — photo 37" loading="lazy" /></button>
+    </div>
+
+    <div class="gallery-cta reveal">
+      <a href="index.html#hours" class="btn btn-red">Opening Hours <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="https://www.instagram.com/434dlygon_barbershop/" target="_blank" rel="noopener" class="btn btn-outline-dark"><i class="fab fa-instagram"></i> More on Instagram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="main-footer">
+  <div class="footer-stripe"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="barberlogo.jpg" alt="434D Lygon Barber Shop logo" loading="lazy" />
+        <p>Precision cuts and genuine old-school barbering in the heart of East Brunswick for over 20 years.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visit</h4>
+        <p>434D Lygon St<br />Brunswick East VIC 3057</p>
+        <p style="margin-top:10px;">Mon – Fri 10 am – 6 pm<br />Sat 10 am – 4:30 pm · Sun Closed</p>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/434dlygon_barbershop/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100042992360021" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2025</span> 434D Lygon Barber Shop. All rights reserved.</span>
+      <span>Walk-ins welcome · No bookings required</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Lightbox ===== -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox-prev" type="button" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+  <img class="lightbox-content" id="lightbox-img" src="" alt="" />
+  <button class="lightbox-next" type="button" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="lightbox-counter"></div>
+  <div class="lightbox-thumbs" aria-label="All photos"></div>
+</div>
+
+<button class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+
+<!-- ===== Gallery photo viewer: click a photo to open, then scroll / swipe / use arrows ===== -->
+<script>
+(function () {
+  var lightbox = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  var counter = lightbox.querySelector('.lightbox-counter');
+  var thumbs = lightbox.querySelector('.lightbox-thumbs');
+  var btnClose = lightbox.querySelector('.lightbox-close');
+  var btnPrev = lightbox.querySelector('.lightbox-prev');
+  var btnNext = lightbox.querySelector('.lightbox-next');
+  var items = [];
+  var index = 0;
+  var lastFocus = null;
+
+  // Build the thumbnail strip from whatever photos are in the grid
+  function build() {
+    items = Array.prototype.slice.call(document.querySelectorAll('.gallery-grid .gallery-item'));
+    thumbs.innerHTML = '';
+    items.forEach(function (item, i) {
+      var src = item.querySelector('img').getAttribute('src');
+      var t = document.createElement('button');
+      t.type = 'button';
+      t.className = 'lightbox-thumb';
+      t.setAttribute('aria-label', 'Show photo ' + (i + 1));
+      t.innerHTML = '<img src="' + src + '" alt="" loading="lazy" />';
+      t.addEventListener('click', function () { show(i); });
+      thumbs.appendChild(t);
+    });
+  }
+
+  // Hide any photo that fails to load
+  document.querySelectorAll('.gallery-grid .gallery-item img').forEach(function (img) {
+    img.addEventListener('error', function () {
+      var item = img.closest('.gallery-item');
+      if (item) item.remove();
+      build();
+    });
+  });
+
+  function show(i) {
+    if (!items.length) return;
+    index = (i + items.length) % items.length;
+    var img = items[index].querySelector('img');
+    lbImg.classList.add('switching');
+    setTimeout(function () {
+      lbImg.src = img.currentSrc || img.src;
+      lbImg.alt = img.alt;
+      lbImg.classList.remove('switching');
+    }, lightbox.classList.contains('open') ? 150 : 0);
+    counter.textContent = (index + 1) + ' / ' + items.length;
+
+    var all = thumbs.children;
+    for (var k = 0; k < all.length; k++) all[k].classList.toggle('active', k === index);
+    var active = all[index];
+    if (active) {
+      thumbs.scrollTo({
+        left: active.offsetLeft - (thumbs.clientWidth - active.offsetWidth) / 2,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  function open(i) {
+    lastFocus = document.activeElement;
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lock-scroll');
+    show(i);
+    btnClose.focus();
+  }
+
+  function close() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('lock-scroll');
+    if (lastFocus) lastFocus.focus();
+  }
+
+  build();
+
+  // Click any photo in the grid to open it
+  document.querySelector('.gallery-grid').addEventListener('click', function (e) {
+    var item = e.target.closest('.gallery-item');
+    if (item) open(items.indexOf(item));
+  });
+
+  btnClose.addEventListener('click', close);
+  btnPrev.addEventListener('click', function () { show(index - 1); });
+  btnNext.addEventListener('click', function () { show(index + 1); });
+
+  // Click the dark background to close
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) close();
+  });
+
+  // Keyboard: ← → to browse, Esc to close
+  document.addEventListener('keydown', function (e) {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') show(index - 1);
+    else if (e.key === 'ArrowRight') show(index + 1);
+  });
+
+  // Mouse wheel / trackpad scroll moves between photos
+  var wheelLock = false;
+  lightbox.addEventListener('wheel', function (e) {
+    if (e.target.closest('.lightbox-thumbs')) return; // let the strip scroll normally
+    e.preventDefault();
+    if (wheelLock) return;
+    var d = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+    if (Math.abs(d) < 10) return;
+    show(index + (d > 0 ? 1 : -1));
+    wheelLock = true;
+    setTimeout(function () { wheelLock = false; }, 350);
+  }, { passive: false });
+
+  // Swipe left / right on phones
+  var startX = null;
+  lightbox.addEventListener('touchstart', function (e) {
+    if (e.target.closest('.lightbox-thumbs')) return;
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+  lightbox.addEventListener('touchend', function (e) {
+    if (startX === null) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1));
+    startX = null;
+  });
+})();
+</script>
+</body>
+</html>

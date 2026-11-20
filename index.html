@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>434D Lygon Barber Shop | Barber in Brunswick East, Melbourne</title>
+  <meta name="description" content="434D Lygon Barber Shop — precision cuts, skin fades, beard trims and hot towel shaves in Brunswick East, Melbourne. Walk-ins welcome, no bookings required." />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="434D Lygon Barber Shop" />
+  <meta property="og:description" content="Precision cuts. Authentic style. Walk-ins welcome in the heart of East Brunswick." />
+  <meta property="og:image" content="homescreenimage.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="barberlogo.jpg" type="image/jpeg" />
+
+  <!-- Fonts & icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Helps Google show your hours & address -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "434D Lygon Barber Shop",
+    "image": "homescreenimage.jpg",
+    "logo": "barberlogo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "434D Lygon St",
+      "addressLocality": "Brunswick East",
+      "addressRegion": "VIC",
+      "postalCode": "3057",
+      "addressCountry": "AU"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:30" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/434dlygon_barbershop/",
+      "https://www.facebook.com/profile.php?id=100042992360021"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<canvas id="backgroundCanvas" aria-hidden="true"></canvas>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- ===== Navigation ===== -->
+<nav class="hero-nav" aria-label="Main">
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#hours">Hours</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+</nav>
+
+<!-- ===== Scrolling review banner ===== -->
+<div class="review-banner-wrapper fixed-review-banner" aria-label="Customer reviews">
+  <div class="review-banner-track">
+    <div class="review-banner">
+      <span>“I have been going here for over 12 years and wouldn’t dream of going anywhere else. No other barbers than Nameer and Hkmat can match the attention to detail and quality of cut, value for money, and highly entertaining and educational banter. A true barber shop, would give 10 stars if I could.” <b class="stars">★★★★★</b></span>
+      <span>“If I could give Nameer a 10 star review I would. An absolute gentleman and talented barber. Have been going to him for years and now taking my son too. The results speak for themselves. Nameer…. You’re the best!!” <b class="stars">★★★★★</b></span>
+      <span>“Thank god I found this place. My go to barber for Brunswick area. Cheap, great service, lovely owner and of course my skin fade haircut is always well done! Also great complimentary coffee” <b class="stars">★★★★★</b></span>
+      <span>“Nameer is a great Barber and a warm, friendly guy. Sorts me out with a great undercut/fade and tamed moustache. Come here if you want to look sharp and have an interesting conversation.” <b class="stars">★★★★★</b></span>
+      <span>“Whether you're in Brunswick, Ballarat or Bendigo, a haircut from Nameer and colleagues is worth the trip! After a smile, warm welcome and expert trim, you can leave feeling renewed and ready to face whatever the world has in store for you.” <b class="stars">★★★★★</b></span>
+      <span>“The haircuts and the price are great, and Nameer entertains, cajoles, tells stories and keeps a great friendly vibe and energy going throughout your visit. Plus if you’re really well behaved he’ll provide a coffee too. The best barber I’ve found in Melbourne.” <b class="stars">★★★★★</b></span>
+      <span>“Nameer and his colleague who sometimes works there are both highly skilled, professional barbers who charge very reasonable prices compared to the usual hipster nonsense elsewhere. The business is a throwback to old school barber shops, where conversation is constant and people walk in and jump into the discourse instantly. Good place, great owner, excellent haircuts.” <b class="stars">★★★★★</b></span>
+      <span>“Finally found a friendly barber who is a gentleman even at the busiest of times. Always look forward to my next regular cut and highly recommend to anyone who values good service as well as honest and amusing banter over the nearby edgy hipster sideshows.” <b class="stars">★★★★★</b></span>
+      <span>“Best barber in Melbourne. Have been getting my haircut by Nameer for years now and highly recommend his shop / services.” <b class="stars">★★★★★</b></span>
+      <span>“It's been almost a year since I've been walking into Nameer's studio for a haircut , and I got to be honest it's always been a brighter day everytime I've stepped in and out of here. He's a magican when it comes to short hair cuts and an awesome person to have a chat with. Without doubt this is one studio everyone's got to try to feel this experience and the energy.” <b class="stars">★★★★★</b></span>
+      <span>“What can i say..it takes me an hour drive to have a haircut at studio 434d. Nameer over the years has been cutting my hair. His jovial conversation and importantly his excellent haircut makes the drive and the wait worthwhile.” <b class="stars">★★★★★</b></span>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== Hero ===== -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <img src="barberlogo.jpg" alt="434D Lygon Barber Shop logo" class="hero-logo fade-in-logo" />
+    <h1 class="fade-in-text">Precision Cuts. Authentic Style.</h1>
+    <p class="fade-in-text delay">Walk-ins welcome. No bookings required. Located in the heart of East Brunswick.</p>
+
+    <div class="hero-social fade-in-text delay">
+      <a href="https://www.instagram.com/434dlygon_barbershop/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100042992360021" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+
+    <div class="hero-actions fade-in-text delay2">
+      <a href="gallery.html" class="btn btn-red">View Our Gallery <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#location" class="btn btn-outline-light"><i class="fa-solid fa-location-dot"></i> Find Us</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== About ===== -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="about-content">
+
+      <div class="about-image reveal from-left">
+        <img src="about-image.jpeg" alt="Nameer, owner and barber at 434D Lygon Barber Shop" loading="lazy" />
+        <div class="about-badge">
+          <strong>20+</strong>
+          <span>Years on Lygon St</span>
+        </div>
+      </div>
+
+      <div class="about-text reveal from-right">
+        <span class="eyebrow left">About Us</span>
+        <h2>More Than Just <span class="accent">A Haircut</span></h2>
+        <div class="pole-divider left"></div>
+
+        <p>
+          Located in the heart of East Brunswick, 434D Lygon Barber Shop has been delivering quality haircuts, sharp fades,
+          and genuine old-school barber shop service for over 20 years. Built on great conversation, attention to detail,
+          and a welcoming atmosphere, Nameer has created more than just a barber shop, he’s built a place where clients feel at home.
+        </p>
+        <p>
+          Whether you’re after a clean skin fade, beard trim, or a timeless classic cut,
+          every client is treated like family and every haircut is completed with precision and care.
+          At 434D Lygon Barber Shop, it’s not just about the haircut, it’s about the experience.
+        </p>
+
+        <p class="signature">Nameer <small>Owner of 434D Barber Shop</small></p>
+
+        <div class="about-stats" data-stagger="0.12">
+          <div class="stat reveal"><i class="fa-solid fa-door-open"></i><strong>Walk-ins<br />Welcome</strong></div>
+          <div class="stat reveal"><i class="fa-solid fa-mug-hot"></i><strong>Coffee &amp;<br />Good Chat</strong></div>
+          <div class="stat reveal"><i class="fa-solid fa-children"></i><strong>Men &amp;<br />Kids’ Cuts</strong></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section id="services" class="section section--alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>Our <span class="accent">Services</span></h2>
+      <div class="pole-divider"></div>
+      <p>Classic barbering done properly - From sharp skin fades to traditional hot towel razor shaves.</p>
+    </div>
+
+    <div class="services-grid" data-stagger="0.15">
+      <article class="service-card reveal">
+        <span class="service-num">01</span>
+        <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+        <h3>Hair</h3>
+        <ul class="service-items">
+          <li>Men's Haircuts</li>
+          <li>Kids' Haircuts</li>
+          <li>Skin Fade / Taper Fades</li>
+          <li>Buzz Cut</li>
+          <li>Scissor Cut</li>
+          <li>Hair Wash</li>
+          <li>Hair Styling</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-num">02</span>
+        <div class="service-icon"><i class="fa-solid fa-user-tie"></i></div>
+        <h3>Beard</h3>
+        <ul class="service-items">
+          <li>Beard Trim</li>
+          <li>Beard Shaping</li>
+          <li>Beard Line-Up</li>
+          <li>Hot Towel Shave</li>
+          <li>Traditional Razor Shave</li>
+          <li>Neck Shave</li>
+        </ul>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-num">03</span>
+        <div class="service-icon"><i class="fa-solid fa-star"></i></div>
+        <h3>Grooming</h3>
+        <ul class="service-items">
+          <li>Hairline / Edge-Up</li>
+          <li>Eyebrow Trimming</li>
+          <li>Ear and Nose Hair Waxing / Trimming</li>
+          <li>Face Clean-Up</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="services-note reveal">
+      <span><strong>No appointment needed!</strong> Just walk in and take a seat.</span>
+      <a href="#hours" class="btn btn-outline-dark">See Opening Hours <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Hours ===== -->
+<section id="hours" class="section section--dark hours-section">
+  <div class="container">
+    <div class="hours-layout">
+      <div class="hours-intro reveal from-left">
+        <span class="eyebrow left">Business Hours</span>
+        <h2>Walk In. Sit Down.<br /><span class="accent">Look Sharp.</span></h2>
+        <div class="open-status" role="status">
+          <span class="dot"></span>
+          <span class="label">Open Monday to Saturday</span>
+        </div>
+      </div>
+
+      <div class="business-hours-box reveal from-right">
+        <h3><i class="fa-regular fa-clock"></i> Opening Hours</h3>
+        <div class="hours-row" data-day="1"><span>Monday</span><span>10 am – 6 pm</span></div>
+        <div class="hours-row" data-day="2"><span>Tuesday</span><span>10 am – 6 pm</span></div>
+        <div class="hours-row" data-day="3"><span>Wednesday</span><span>10 am – 6 pm</span></div>
+        <div class="hours-row" data-day="4"><span>Thursday</span><span>10 am – 6 pm</span></div>
+        <div class="hours-row" data-day="5"><span>Friday</span><span>10 am – 6 pm</span></div>
+        <div class="hours-row" data-day="6"><span>Saturday</span><span>10 am – 4:30 pm</span></div>
+        <div class="hours-row closed" data-day="0"><span>Sunday</span><span>Closed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Reviews ===== -->
+<section id="reviews" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Testimonials</span>
+      <h2>What Our <span class="accent">Clients</span> Say</h2>
+      <div class="pole-divider"></div>
+    </div>
+
+    <div class="reviews-grid" data-stagger="0.1">
+      <article class="review-card reveal">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“If you’re looking for a place to get a great cut with a good conversation then this is the perfect place to go. Its a great experience and Nameer managed to cut my extremely curly hair fairly well. Will surely be back.”</blockquote>
+        <div class="reviewer"><span class="avatar">A</span><div><strong>Amir Abdul</strong><small><i class="fa-brands fa-google"></i>Google review</small></div></div>
+      </article>
+
+      <article class="review-card reveal">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“I've been getting my hair cut with Nameer for three years. It's always a pleasure stepping into his shop, Nameer is always welcoming. Hair cuts are always on point, you can't go wrong. Thanks Nameer!”</blockquote>
+        <div class="reviewer"><span class="avatar">G</span><div><strong>George C</strong><small><i class="fa-brands fa-google"></i>Google review</small></div></div>
+      </article>
+
+      <article class="review-card reveal">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“I have been coming to Nameer for about 5 years now, always happy with my cuts and appreciate his skill as a barber and great conversation. Would highly recommend, very affordable!”</blockquote>
+        <div class="reviewer"><span class="avatar">R</span><div><strong>Rimu Mannion</strong><small><i class="fa-brands fa-google"></i>Google review</small></div></div>
+      </article>
+
+      <article class="review-card reveal">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“There’s a reason this place gets such high reviews. Nameer does an excellent job every time I’m in and keeps the vibes high. Has been my regular barber the last 6 months and now can’t see myself going anywhere else.”</blockquote>
+        <div class="reviewer"><span class="avatar">J</span><div><strong>Josh Jay</strong><small><i class="fa-brands fa-google"></i>Google review</small></div></div>
+      </article>
+
+      <article class="review-card reveal">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“An amazing haircut (and beard!) guaranteed. Nameer is incredibly friendly and the shop has a great atmosphere. I look forward to each visit”</blockquote>
+        <div class="reviewer"><span class="avatar">A</span><div><strong>Aaron Capon</strong><small><i class="fa-brands fa-google"></i>Google review</small></div></div>
+      </article>
+
+      <article class="review-card reveal">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“Came across this gem by accident two years ago and have not been anywhere since. Nameer is more than a barber, he becomes your friend too. Professional, quick haircuts with always great conversation.”</blockquote>
+        <div class="reviewer"><span class="avatar">N</span><div><strong>Nick M</strong><small><i class="fa-brands fa-google"></i>Google review</small></div></div>
+      </article>
+
+      <article class="review-card reveal">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“Don't look any further for a barber - wherever you are in Melbourne it is worth going to see Nameer. He is hands-down the best barber I have ever been to. The cost of a haircut is great value for money. And Nameer is an outstanding individual - friendly, generous - he makes me a coffee every time I visit - and a great conversationalist. Once you have been there once you will keep going back - guaranteed!”</blockquote>
+        <div class="reviewer"><span class="avatar">D</span><div><strong>David Paterson</strong><small><i class="fa-brands fa-google"></i>Google review</small></div></div>
+      </article>
+
+      <article class="review-card reveal">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“To quote Nameer “This shop is like United Nations.. but we don’t fight, everyone get along just fine”. To me it feels like a second home and Nameer is a brother from another mother. Warm convos and awesome hair cut is guaranteed.”</blockquote>
+        <div class="reviewer"><span class="avatar">T</span><div><strong>Tolga Tumay</strong><small><i class="fa-brands fa-google"></i>Google review</small></div></div>
+      </article>
+
+      <article class="review-card reveal">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“I've been coming here for about a year and it's my favourite hairdresser in the area. The service is always outstanding, the owner is one of the nicest, welcoming guys I've ever met. On a busy Saturday the atmosphere in the shop is really fun with alot of guys from all walks of life just chatting waiting to get their hair cut. Prices are cheap and once your in the hair it's quick.”</blockquote>
+        <div class="reviewer"><span class="avatar">N</span><div><strong>Nichollas Scott</strong><small><i class="fa-brands fa-google"></i>Google review</small></div></div>
+      </article>
+    </div>
+
+    <div class="reviews-cta reveal">
+      <a class="btn btn-blue" href="https://www.google.com/search?q=434d+barber+lygon#lrd=0x6ad64359f3d57871:0x3bf497d555fc405f,1,,,," target="_blank" rel="noopener">
+        <i class="fa-brands fa-google"></i> Read More Reviews on Google
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Location ===== -->
+<section id="location" class="section section--alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Visit Us</span>
+      <h2>Find <span class="accent">Us</span></h2>
+      <div class="pole-divider"></div>
+    </div>
+
+    <div class="location-layout">
+      <div class="location-card reveal from-left">
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Address</h4>
+            <p>434D Lygon St<br />Brunswick East VIC 3057</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-regular fa-clock"></i>
+          <div>
+            <h4>Hours</h4>
+            <p>Mon – Fri: 10 am – 6 pm<br />Sat: 10 am – 4:30 pm<br />Sun: Closed</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-door-open"></i>
+          <div>
+            <h4>Bookings</h4>
+            <p>Walk-ins only - No booking required</p>
+          </div>
+        </div>
+        <a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&amp;destination=434D+Lygon+St,+Brunswick+East+VIC+3057" target="_blank" rel="noopener">
+          Get Directions <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="map-wrap reveal from-right">
+        <iframe
+          title="Map showing 434D Lygon Barber Shop"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.0376974718254!2d144.9705641!3d-37.764214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad64359f3d57871%3A0x3bf497d555fc405f!2s434D%20Lygon%20Barber%20Shop!5e0!3m2!1sen!2sau!4v1680000000000!5m2!1sen!2sau"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="main-footer">
+  <div class="footer-stripe"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="barberlogo.jpg" alt="434D Lygon Barber Shop logo" loading="lazy" />
+        <p>Precision cuts and genuine old-school barbering in the heart of East Brunswick for over 20 years.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visit</h4>
+        <p>434D Lygon St<br />Brunswick East VIC 3057</p>
+        <p style="margin-top:10px;">Mon – Fri 10 am – 6 pm<br />Sat 10 am– 4:30 pm · Sun Closed</p>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/434dlygon_barbershop/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100042992360021" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2025</span> 434D Lygon Barber Shop. All rights reserved.</span>
+      <span>Walk-ins welcome · No bookings required</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
